@@ -101,40 +101,61 @@
         .hero a:hover {
             background: #ffc107;
         }
-        /* Services Section */
-        .services {
-            padding: 50px 10%;
-            background: #fff;
-            text-align: center;
-        }
-        .services h2 {
-            font-size: 2.5rem;
-            margin-bottom: 30px;
-            color: #0056b3;
-        }
-        .services-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 20px;
-        }
-        .service-card {
-            background: #f8f9fa;
-            border: 1px solid #ddd;
-            border-radius: 8px;
-            padding: 20px;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-            transition: transform 0.3s;
-        }
-        .service-card:hover {
-            transform: translateY(-5px);
-        }
-        .service-card h3 {
-            color: #007bff;
-            margin: 10px 0;
-        }
-        .service-card p {
-            font-size: 1rem;
-        }
+        .offerings {
+    padding: 80px 10%;
+    background-color: #f2f2f2;
+    text-align: center;
+}
+
+.offerings h2 {
+    font-size: 2.8em;
+    margin-bottom: 40px;
+    color: #333;
+}
+
+.offerings-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.offering-item {
+    background: #ffffff;
+    border-radius: 12px;
+    padding: 25px;
+    width: 22%; /* Adjust for 4 items in a row */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+}
+
+.offering-item:hover {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    transform: translateY(-5px);
+}
+
+.offering-item h3 {
+    font-size: 1.8em;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.offering-item p {
+    font-size: 1.1em;
+    color: #666;
+}
+
+@media (max-width: 768px) {
+    .offering-item {
+        width: 48%; /* On smaller screens, adjust to 2 items per row */
+    }
+}
+
+@media (max-width: 480px) {
+    .offering-item {
+        width: 100%; /* On very small screens, 1 item per row */
+    }
+}
         /* Contact Section */
         .contact-cta {
             background: linear-gradient(90deg, #007bff, #0056b3);
@@ -206,24 +227,24 @@
     <a href="Contact.html">Get Started</a>
 </section>
 
-<section class="services">
-    <h2>Our Services</h2>
-    <div class="services-grid">
-        <div class="service-card">
-            <h3>Computer Repair</h3>
-            <p>Fixing software and hardware issues for desktops and laptops.</p>
+<section class="offerings">
+    <h2>Our Offerings</h2>
+    <div class="offerings-container">
+        <div class="offering-item">
+            <h3>24/7 Customer Support</h3>
+            <p>We are always available to assist you with any questions or issues you may have, at any time.</p>
         </div>
-        <div class="service-card">
-            <h3>Printer Repair</h3>
-            <p>Resolving printing issues and providing maintenance.</p>
+        <div class="offering-item">
+            <h3>Quick Turnaround</h3>
+            <p>We value your time. Our team ensures fast and efficient service so you can get back to business.</p>
         </div>
-        <div class="service-card">
-            <h3>Custom Email IDs</h3>
-            <p>Get professional email IDs for your business domain.</p>
+        <div class="offering-item">
+            <h3>Affordable Pricing</h3>
+            <p>Our services are competitively priced to ensure you get the best value without compromising on quality.</p>
         </div>
-        <div class="service-card">
-            <h3>Website Development</h3>
-            <p>Build responsive and SEO-friendly websites for your business.</p>
+        <div class="offering-item">
+            <h3>Expert Technicians</h3>
+            <p>Our team of certified professionals brings years of experience to handle even the most complex issues.</p>
         </div>
     </div>
 </section>
