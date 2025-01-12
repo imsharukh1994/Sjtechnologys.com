@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - SJ Technologys</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            background-color: #f8f9fa;
+        }
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+        /* Header Section */
+        header {
+            background: linear-gradient(90deg, #0056b3, #007bff);
+            color: #fff;
+            padding: 20px 10%;
+            text-align: center;
+        }
+        header h1 {
+            font-size: 2.8rem;
+            margin: 0;
+        }
+        header p {
+            font-size: 1.2rem;
+            margin: 10px 0 0;
+        }
+        /* Navigation Bar */
+        nav {
+            position: sticky;
+            top: 0;
+            background: #fff;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            padding: 10px 10%;
+            z-index: 1000;
+        }
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            margin: 0;
+            padding: 0;
+        }
+        nav ul li {
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: #0056b3;
+            font-weight: bold;
+        }
+        nav ul li a:hover {
+            color: #007bff;
+        }
+        /* Contact Section */
+        .contact-form {
+            padding: 50px 10%;
+            background: #fff;
+            text-align: center;
+        }
+        .contact-form h2 {
+            font-size: 2.5rem;
+            margin-bottom: 30px;
+            color: #0056b3;
+        }
+        .contact-form form {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        .contact-form input,
+        .contact-form textarea {
+            padding: 10px;
+            font-size: 1rem;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            width: 100%;
+        }
+        .contact-form textarea {
+            height: 150px;
+            resize: vertical;
+        }
+        .contact-form button {
+            padding: 10px 20px;
+            background: #007bff;
+            color: #fff;
+            font-weight: bold;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+        .contact-form button:hover {
+            background: #0056b3;
+        }
+        /* Contact Info Section */
+        .contact-info {
+            text-align: center;
+            margin-top: 40px;
+        }
+        .contact-info h3 {
+            font-size: 2rem;
+            color: #0056b3;
+        }
+        .contact-info p {
+            font-size: 1.2rem;
+        }
+        /* Footer Section */
+        footer {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px 10%;
+            margin-top: 20px;
+        }
+        footer p {
+            margin: 0;
+        }
+        footer .social-links a {
+            margin: 0 10px;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Contact Us</h1>
+    <p>We're here to assist you with all your IT needs. Get in touch with us today!</p>
+</header>
+
+<nav>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+</nav>
+
+<section class="contact-form">
+    <h2>Send Us a Message</h2>
+    <form action="#" method="post">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <textarea name="message" placeholder="Your Message" required></textarea>
+        <button type="submit">Submit</button>
+    </form>
+</section>
+
+<!-- Contact Information Section -->
+<section class="contact-info">
+    <h3>Our Contact Information</h3>
+    <p>Email us at:</p>
+    <p><strong>Sales:</strong> <a href="mailto:sales@sjtechnologys.com">sales@sjtechnologys.com</a></p>
+    <p><strong>Support:</strong> <a href="mailto:support@sjtechnologys.com">support@sjtechnologys.com</a></p>
+    <p><strong>Phone:</strong> +1 (555) 123-4567</p> <!-- Replace with your actual phone number -->
+</section>
+
+<footer>
+    <p>&copy; 2025 SJ Technologys. All rights reserved.</p>
+    <div class="social-links">
+        <a href="#">Facebook</a> | <a href="#">Twitter</a> | <a href="#">LinkedIn</a>
+    </div>
+</footer>
+
+</body>
+</html>
