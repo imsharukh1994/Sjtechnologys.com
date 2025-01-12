@@ -1,0 +1,240 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SJ Technologys - Home</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            background-color: #f8f9fa;
+        }
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+        /* Header Section */
+        header {
+            background: linear-gradient(90deg, #0056b3, #007bff);
+            color: #fff;
+            padding: 20px 10%;
+            text-align: center;
+        }
+        header h1 {
+            font-size: 2.8rem;
+            margin: 0;
+        }
+        header p {
+            font-size: 1.2rem;
+            margin: 10px 0 0;
+        }
+        /* Navigation Bar */
+        nav {
+            position: sticky;
+            top: 0;
+            background: #fff;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            padding: 10px 10%;
+            z-index: 1000;
+        }
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            margin: 0;
+            padding: 0;
+        }
+        nav ul li {
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: #0056b3;
+            font-weight: bold;
+        }
+        nav ul li a:hover {
+            color: #007bff;
+        }
+        /* Hero Section */
+        .hero {
+            background: url('https://via.placeholder.com/1920x600') no-repeat center/cover;
+            color: #fff;
+            text-align: center;
+            padding: 100px 10%;
+            position: relative;
+        }
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.5);
+            z-index: 1;
+        }
+        .hero h1,
+        .hero p {
+            position: relative;
+            z-index: 2;
+        }
+        .hero h1 {
+            font-size: 3rem;
+        }
+        .hero p {
+            font-size: 1.2rem;
+            margin: 20px 0;
+        }
+        .hero a {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            background: #ffdd57;
+            color: #333;
+            font-weight: bold;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+        .hero a:hover {
+            background: #ffc107;
+        }
+        /* Services Section */
+        .services {
+            padding: 50px 10%;
+            background: #fff;
+            text-align: center;
+        }
+        .services h2 {
+            font-size: 2.5rem;
+            margin-bottom: 30px;
+            color: #0056b3;
+        }
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+        .service-card {
+            background: #f8f9fa;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+        .service-card:hover {
+            transform: translateY(-5px);
+        }
+        .service-card h3 {
+            color: #007bff;
+            margin: 10px 0;
+        }
+        .service-card p {
+            font-size: 1rem;
+        }
+        /* Contact Section */
+        .contact-cta {
+            background: linear-gradient(90deg, #007bff, #0056b3);
+            color: #fff;
+            text-align: center;
+            padding: 40px 10%;
+        }
+        .contact-cta h2 {
+            font-size: 2rem;
+            margin-bottom: 10px;
+        }
+        .contact-cta p {
+            font-size: 1.1rem;
+        }
+        .contact-cta a {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            background: #ffdd57;
+            color: #333;
+            font-weight: bold;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+        .contact-cta a:hover {
+            background: #ffc107;
+        }
+        /* Footer Section */
+        footer {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px 10%;
+            margin-top: 20px;
+        }
+        footer p {
+            margin: 0;
+        }
+        footer .social-links a {
+            margin: 0 10px;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Welcome to SJ Technologys</h1>
+    <p>Your Trusted IT Partner</p>
+</header>
+
+<nav>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+</nav>
+
+<section class="hero">
+    <h1>Smart IT Solutions for Your Business</h1>
+    <p>Offering computer repair, business email solutions, and custom website development to empower your business.</p>
+    <a href="contact.html">Get Started</a>
+</section>
+
+<section class="services">
+    <h2>Our Services</h2>
+    <div class="services-grid">
+        <div class="service-card">
+            <h3>Computer Repair</h3>
+            <p>Fixing software and hardware issues for desktops and laptops.</p>
+        </div>
+        <div class="service-card">
+            <h3>Printer Repair</h3>
+            <p>Resolving printing issues and providing maintenance.</p>
+        </div>
+        <div class="service-card">
+            <h3>Custom Email IDs</h3>
+            <p>Get professional email IDs for your business domain.</p>
+        </div>
+        <div class="service-card">
+            <h3>Website Development</h3>
+            <p>Build responsive and SEO-friendly websites for your business.</p>
+        </div>
+    </div>
+</section>
+
+<section class="contact-cta">
+    <h2>Contact Us Today</h2>
+    <p>Let us help you transform your business with smart IT solutions!</p>
+    <a href="contact.html">Get in Touch</a>
+</section>
+
+<footer>
+    <p>&copy; 2025 SJ Technologys. All rights reserved.</p>
+    <div class="social-links">
+        <a href="#">Facebook</a> | <a href="#">Twitter</a> | <a href="#">LinkedIn</a>
+    </div>
+</footer>
+
+</body>
+</html>
