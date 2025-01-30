@@ -1,102 +1,77 @@
 import React from "react";
-import { Card, CardContent } from "@/components/ui/card";
-import { Button } from "@/components/ui/button";
+import "./styles.css";
 
 const HomePage = () => {
   return (
     <div>
       {/* Header */}
-      <header className="flex justify-between items-center p-4 bg-gray-800 text-white">
-        <h1 className="text-xl font-bold">SJ Technology</h1>
-        <nav>
-          <ul className="flex space-x-4">
-            <li>Home</li>
-            <li>Products</li>
-            <li>Services</li>
-            <li>Contact</li>
-          </ul>
+      <header className="header">
+        <div className="logo">SJ Technology</div>
+        <nav className="nav">
+          <a href="#home">Home</a>
+          <a href="#products">Products</a>
+          <a href="#services">Services</a>
+          <a href="#contact">Contact</a>
         </nav>
-        <Button className="bg-orange-500 text-white">Get Started</Button>
+        <button className="btn-primary">Get Started</button>
       </header>
 
       {/* Welcome Section */}
-      <section className="flex items-center justify-between p-8 bg-gray-100">
-        <div className="w-1/2">
-          <h2 className="text-3xl font-bold text-gray-800">Connect. Engage. Succeed.</h2>
-          <p className="mt-4 text-gray-600">
-            At SJ Technology, we specialize in delivering reliable IT support
-            and advanced solutions that empower businesses to thrive in the
-            digital age.
-          </p>
-          <Button className="mt-4 bg-orange-500 text-white">Get Started</Button>
-        </div>
-        <div className="w-1/2">
-          {/* Replace with an actual image */}
-          <img src="/placeholder.png" alt="Welcome" />
-        </div>
+      <section id="home" className="welcome">
+        <h1>Connect. Engage. Succeed.</h1>
+        <p>
+          At SJ Technology, we specialize in delivering reliable IT support and
+          advanced solutions that empower businesses to thrive in the digital
+          age.
+        </p>
+        <button className="btn-primary">Get Started</button>
       </section>
 
       {/* About Section */}
-      <section className="flex items-center justify-between p-8">
-        <div className="w-1/2">
-          <p className="text-gray-600">
-            At SJ Technology, we are committed to providing innovative IT
-            solutions and exceptional support to help businesses stay ahead in
-            a rapidly evolving digital world. Our expert team specializes in
-            optimizing your tech infrastructure, ensuring seamless operations,
-            and delivering reliable, customized solutions tailored to your
-            unique needs.
-          </p>
-        </div>
-        <div className="w-1/2 text-right">
-          <h3 className="text-2xl font-bold text-orange-500">
-            Your Trusted Partner for Comprehensive IT Solutions
-          </h3>
-        </div>
+      <section id="about" className="about">
+        <h2>About Us</h2>
+        <p>
+          At SJ Technology, we are committed to providing innovative IT
+          solutions and exceptional support to help businesses stay ahead in a
+          rapidly evolving digital world.
+        </p>
+        <p>Your Trusted Partner for Comprehensive IT Solutions</p>
       </section>
 
       {/* Features Section */}
-      <section className="p-8 bg-gray-100">
-        <h2 className="text-2xl font-bold text-center text-gray-800 mb-4">Features</h2>
-        <div className="grid grid-cols-3 gap-4">
-          <Card>
-            <CardContent>
-              <h4 className="text-xl font-bold">Feature 1</h4>
-              <p>Detail about feature 1.</p>
-            </CardContent>
-          </Card>
-          <Card>
-            <CardContent>
-              <h4 className="text-xl font-bold">Feature 2</h4>
-              <p>Detail about feature 2.</p>
-            </CardContent>
-          </Card>
-          <Card>
-            <CardContent>
-              <h4 className="text-xl font-bold">Feature 3</h4>
-              <p>Detail about feature 3.</p>
-            </CardContent>
-          </Card>
+      <section id="features" className="features">
+        <h2>Features</h2>
+        <div className="feature-list">
+          <div className="feature-item">
+            <h3>Feature 1</h3>
+            <p>Detail about feature 1.</p>
+          </div>
+          <div className="feature-item">
+            <h3>Feature 2</h3>
+            <p>Detail about feature 2.</p>
+          </div>
+          <div className="feature-item">
+            <h3>Feature 3</h3>
+            <p>Detail about feature 3.</p>
+          </div>
         </div>
       </section>
 
       {/* Products Section */}
-      <section className="p-8">
-        <h2 className="text-2xl font-bold text-center text-gray-800 mb-4">Products</h2>
-        <p className="text-center text-gray-600">Details about products go here.</p>
+      <section id="products" className="products">
+        <h2>Products</h2>
+        <p>Details about products go here.</p>
       </section>
 
       {/* Promotional Section */}
-      <section className="p-8 bg-gray-100">
-        <h2 className="text-2xl font-bold text-center text-gray-800 mb-4">
-          Promotional Section
-        </h2>
-        <p className="text-center text-gray-600">Details about promotional offers go here.</p>
+      <section id="promotions" className="promotions">
+        <h2>Promotional Section</h2>
+        <p>Details about promotional offers go here.</p>
       </section>
 
       {/* Footer */}
-      <footer className="p-4 bg-gray-800 text-white text-center">
-        © {new Date().getFullYear()} SJ Technology. All rights reserved.
+      <footer className="footer">
+        <p>© {new Date().getFullYear()} SJ Technology. All rights reserved.</p>
       </footer>
     </div>
   );
