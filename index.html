@@ -3,159 +3,189 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SJ Technologys - Home</title>
+    <title>SJ Technology</title>
     <style>
-        body {
-            font-family: 'Arial', sans-serif;
+        * {
             margin: 0;
             padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
             color: #333;
-            background-color: #f8f9fa;
+            background-color: #fff;
         }
-        a {
-            text-decoration: none;
-            color: inherit;
-        }
+
         header {
-            background: linear-gradient(90deg, #0056b3, #007bff);
-            color: #fff;
-            padding: 20px;
-            text-align: center;
-        }
-        nav {
             display: flex;
-            justify-content: center;
-            background: #fff;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-            padding: 15px 0;
-            position: sticky;
-            top: 0;
-            z-index: 1000;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 2rem;
+            background-color: #fff;
+            border-bottom: 1px solid #ddd;
         }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+
         nav ul {
-            list-style: none;
             display: flex;
-            gap: 20px;
+            list-style: none;
         }
+
         nav ul li {
-            display: inline;
+            margin: 0 1rem;
         }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #333;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #f4a100;
+        }
+
         .hero {
             display: flex;
-            flex-direction: column;
+            justify-content: space-between;
             align-items: center;
-            justify-content: center;
-            text-align: center;
-            background: url('images/Hero_background.JPG') no-repeat center/cover;
+            padding: 2rem;
+            background-color: #fff;
+        }
+
+        .hero-text {
+            max-width: 50%;
+        }
+
+        .hero-text h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .hero-text p {
+            margin-bottom: 1.5rem;
+        }
+
+        .hero-text button {
+            padding: 0.5rem 1rem;
+            font-size: 1rem;
             color: #fff;
-            padding: 120px 20px;
-            position: relative;
+            background-color: #f4a100;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
         }
-        .hero::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background: rgba(0, 0, 0, 0.5);
-            z-index: 1;
+
+        .hero-text button:hover {
+            background-color: #d08900;
         }
-        .hero h1, .hero p, .hero a {
-            position: relative;
-            z-index: 2;
+
+        .hero-image img {
+            max-width: 100%;
+            height: auto;
         }
-        .offerings {
+
+        .services {
+            padding: 2rem;
+            background-color: #f9f9f9;
+        }
+
+        .services h2 {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+
+        .service-cards {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 20px;
-            padding: 60px 10%;
-            background-color: #f2f2f2;
+            gap: 2rem;
         }
-        .offering-item {
-            background: #fff;
-            padding: 20px;
+
+        .service-card {
+            background-color: #fff;
+            border: 1px solid #ddd;
             border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            text-align: center;
-            transition: transform 0.3s ease-in-out;
+            padding: 1rem;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
         }
-        .offering-item:hover {
+
+        .service-card:hover {
             transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
         }
-        .contact-cta {
-            text-align: center;
-            padding: 50px;
-            background: linear-gradient(90deg, #007bff, #0056b3);
-            color: #fff;
+
+        .service-card img {
+            max-width: 100%;
+            border-radius: 5px;
+            margin-bottom: 1rem;
         }
-        footer {
-            text-align: center;
-            padding: 20px;
-            background: #333;
-            color: #fff;
+
+        .service-card h3 {
+            margin-bottom: 0.5rem;
+        }
+
+        .service-card p {
+            font-size: 0.9rem;
+            color: #666;
         }
     </style>
 </head>
 <body>
+    <header>
+        <div class="logo">SJ Technology</div>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Product</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
-<header>
-    <img src="Images/Logo.PNG" style="width: 70px; height: auto;" alt="SJ Technologys Logo">
-    <h1>Welcome to SJ Technologys</h1>
-    <p>Your Trusted IT Partner</p>
-</header>
+    <section class="hero">
+        <div class="hero-text">
+            <h1>Connect. Engage. Succeed.</h1>
+            <p>At SJ Technology, we specialize in delivering reliable IT support and advanced solutions that empower businesses to thrive in the digital age.</p>
+            <button>Get Started</button>
+        </div>
+        <div class="hero-image">
+            <img src="hero-image.png" alt="Hero Image">
+        </div>
+    </section>
 
-<nav>
-    <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="Services.html">Services</a></li>
-        <li><a href="Contact.html">Contact</a></li>
-    </ul>
-</nav>
-
-<section class="hero">
-    <h1>Smart IT Solutions for Your Business</h1>
-    <p>Offering computer repair, business email solutions, and custom website development to empower your business.</p>
-    <a href="Contact.html" style="padding: 10px 20px; background: #ffdd57; color: #333; border-radius: 5px;">Get Started</a>
-</section>
-
-<section class="offerings">
-    <div class="offering-item">
-        <h3>24/7 Customer Support</h3>
-        <p>Always available to assist with any questions or issues.</p>
-    </div>
-    <div class="offering-item">
-        <h3>Quick Turnaround</h3>
-        <p>Fast and efficient service to keep your business running.</p>
-    </div>
-    <div class="offering-item">
-        <h3>Affordable Pricing</h3>
-        <p>Competitive prices without compromising on quality.</p>
-    </div>
-    <div class="offering-item">
-        <h3>Expert Technicians</h3>
-        <p>Certified professionals handling complex issues.</p>
-    </div>
-</section>
-
-<section class="contact-cta">
-    <h2>Contact Us Today</h2>
-    <p>Transform your business with smart IT solutions!</p>
-    <a href="contact.html" style="padding: 10px 20px; background: #ffdd57; color: #333; border-radius: 5px;">Get in Touch</a>
-</section>
-
-<footer>
-    <p>&copy; 2025 SJ Technologys. All rights reserved.</p>
-    <div>
-        <a href="https://www.facebook.com/share/14eco7o1DQ/?mibextid=wwXIfr" style="color: #fff;">Facebook</a> |
-        <a href="#" style="color: #fff;">Twitter</a> |
-        <a href="https://www.linkedin.com/company/sjtechnologys/" style="color: #fff;">LinkedIn</a>
-    </div>
-    <div>
-        <a href="terms-conditions.html" style="color: #fff;">Terms & Conditions</a> |
-        <a href="PrivacyPolicy.html" style="color: #fff;">Privacy Policy</a>
-    </div>
-</footer>
-
+    <section class="services">
+        <h2>Our Services</h2>
+        <div class="service-cards">
+            <div class="service-card">
+                <img src="service1.png" alt="Computer Repair">
+                <h3>Computer/Laptop Repair</h3>
+                <p>We diagnose and fix all types of computer issues, ensuring your devices run smoothly and efficiently.</p>
+            </div>
+            <div class="service-card">
+                <img src="service2.png" alt="Printer Repair">
+                <h3>Printer Repair</h3>
+                <p>Expert printer repair services to ensure your devices are always ready to meet your needs.</p>
+            </div>
+            <div class="service-card">
+                <img src="service3.png" alt="24/7 Customer Support">
+                <h3>24x7 Customer Support</h3>
+                <p>Our dedicated support team is available around the clock to assist you with any issues or questions.</p>
+            </div>
+            <div class="service-card">
+                <img src="service4.png" alt="IT Infrastructure">
+                <h3>IT Infrastructure Support</h3>
+                <p>Reliable support for your IT systems, ensuring smooth operations and maximum uptime.</p>
+            </div>
+        </div>
+    </section>
 </body>
 </html>
