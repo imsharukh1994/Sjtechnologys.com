@@ -1,80 +1,82 @@
-import React from "react";
-import "./styles.css";
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SJ Technology</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <div class="logo">SJ Technology</div>
+    <nav class="nav">
+      <a href="#home">Home</a>
+      <a href="#products">Products</a>
+      <a href="#services">Services</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <button class="btn-primary">Get Started</button>
+  </header>
 
-const HomePage = () => {
-  return (
-    <div>
-      {/* Header */}
-      <header className="header">
-        <div className="logo">SJ Technology</div>
-        <nav className="nav">
-          <a href="#home">Home</a>
-          <a href="#products">Products</a>
-          <a href="#services">Services</a>
-          <a href="#contact">Contact</a>
-        </nav>
-        <button className="btn-primary">Get Started</button>
-      </header>
+  <!-- Welcome Section -->
+  <section id="home" class="welcome">
+    <h1>Connect. Engage. Succeed.</h1>
+    <p>
+      At SJ Technology, we specialize in delivering reliable IT support and
+      advanced solutions that empower businesses to thrive in the digital
+      age.
+    </p>
+    <button class="btn-primary">Get Started</button>
+  </section>
 
-      {/* Welcome Section */}
-      <section id="home" className="welcome">
-        <h1>Connect. Engage. Succeed.</h1>
-        <p>
-          At SJ Technology, we specialize in delivering reliable IT support and
-          advanced solutions that empower businesses to thrive in the digital
-          age.
-        </p>
-        <button className="btn-primary">Get Started</button>
-      </section>
+  <!-- About Section -->
+  <section id="about" class="about">
+    <h2>About Us</h2>
+    <p>
+      At SJ Technology, we are committed to providing innovative IT
+      solutions and exceptional support to help businesses stay ahead in a
+      rapidly evolving digital world.
+    </p>
+    <p>Your Trusted Partner for Comprehensive IT Solutions</p>
+  </section>
 
-      {/* About Section */}
-      <section id="about" className="about">
-        <h2>About Us</h2>
-        <p>
-          At SJ Technology, we are committed to providing innovative IT
-          solutions and exceptional support to help businesses stay ahead in a
-          rapidly evolving digital world.
-        </p>
-        <p>Your Trusted Partner for Comprehensive IT Solutions</p>
-      </section>
-
-      {/* Features Section */}
-      <section id="features" className="features">
-        <h2>Features</h2>
-        <div className="feature-list">
-          <div className="feature-item">
-            <h3>Feature 1</h3>
-            <p>Detail about feature 1.</p>
-          </div>
-          <div className="feature-item">
-            <h3>Feature 2</h3>
-            <p>Detail about feature 2.</p>
-          </div>
-          <div className="feature-item">
-            <h3>Feature 3</h3>
-            <p>Detail about feature 3.</p>
-          </div>
-        </div>
-      </section>
-
-      {/* Products Section */}
-      <section id="products" className="products">
-        <h2>Products</h2>
-        <p>Details about products go here.</p>
-      </section>
-
-      {/* Promotional Section */}
-      <section id="promotions" className="promotions">
-        <h2>Promotional Section</h2>
-        <p>Details about promotional offers go here.</p>
-      </section>
-
-      {/* Footer */}
-      <footer className="footer">
-        <p>© {new Date().getFullYear()} SJ Technology. All rights reserved.</p>
-      </footer>
+  <!-- Features Section -->
+  <section id="features" class="features">
+    <h2>Features</h2>
+    <div class="feature-list">
+      <div class="feature-item">
+        <h3>Feature 1</h3>
+        <p>Detail about feature 1.</p>
+      </div>
+      <div class="feature-item">
+        <h3>Feature 2</h3>
+        <p>Detail about feature 2.</p>
+      </div>
+      <div class="feature-item">
+        <h3>Feature 3</h3>
+        <p>Detail about feature 3.</p>
+      </div>
     </div>
-  );
-};
+  </section>
 
-export default HomePage;
+  <!-- Products Section -->
+  <section id="products" class="products">
+    <h2>Products</h2>
+    <p>Details about products go here.</p>
+  </section>
+
+  <!-- Promotional Section -->
+  <section id="promotions" class="promotions">
+    <h2>Promotional Section</h2>
+    <p>Details about promotional offers go here.</p>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>© <span id="year"></span> SJ Technology. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
