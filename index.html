@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SJ Technologys - Home</title>
     <style>
-        /* General Styles */
         body {
             font-family: 'Arial', sans-serif;
             margin: 0;
@@ -17,65 +16,39 @@
             text-decoration: none;
             color: inherit;
         }
-        
-        /* Header Section */
         header {
             background: linear-gradient(90deg, #0056b3, #007bff);
             color: #fff;
-            padding: 20px 10%;
+            padding: 20px;
             text-align: center;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
         }
-        header img {
-            width: 70px;
-            height: auto;
-            margin-bottom: 10px;
-        }
-        header h1 {
-            font-size: 2.8rem;
-            margin: 0;
-        }
-        header p {
-            font-size: 1.2rem;
-            margin: 10px 0 0;
-        }
-        
-        /* Navigation Bar */
         nav {
-            position: sticky;
-            top: 0;
+            display: flex;
+            justify-content: center;
             background: #fff;
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-            padding: 15px 10%;
+            padding: 15px 0;
+            position: sticky;
+            top: 0;
             z-index: 1000;
         }
         nav ul {
             list-style: none;
             display: flex;
-            justify-content: center;
-            margin: 0;
-            padding: 0;
+            gap: 20px;
         }
         nav ul li {
-            margin: 0 15px;
+            display: inline;
         }
-        nav ul li a {
-            color: #0056b3;
-            font-weight: bold;
-            transition: color 0.3s;
-        }
-        nav ul li a:hover {
-            color: #007bff;
-        }
-        
-        /* Hero Section */
         .hero {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
             background: url('images/Hero_background.JPG') no-repeat center/cover;
             color: #fff;
-            text-align: center;
-            padding: 120px 10%;
+            padding: 120px 20px;
             position: relative;
         }
         .hero::before {
@@ -88,116 +61,50 @@
             background: rgba(0, 0, 0, 0.5);
             z-index: 1;
         }
-        .hero h1, .hero p {
+        .hero h1, .hero p, .hero a {
             position: relative;
             z-index: 2;
         }
-        .hero h1 {
-            font-size: 3rem;
-        }
-        .hero p {
-            font-size: 1.2rem;
-            margin: 20px 0;
-        }
-        .hero a {
-            display: inline-block;
-            margin-top: 20px;
-            padding: 12px 24px;
-            background: #ffdd57;
-            color: #333;
-            font-weight: bold;
-            border-radius: 5px;
-            transition: background 0.3s;
-        }
-        .hero a:hover {
-            background: #ffc107;
-        }
-        
-        /* Offerings Section */
         .offerings {
-            padding: 80px 10%;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            padding: 60px 10%;
             background-color: #f2f2f2;
-            text-align: center;
-        }
-        .offerings h2 {
-            font-size: 2.5rem;
-            margin-bottom: 40px;
-            color: #333;
-        }
-        .offerings-container {
-            display: flex;
-            justify-content: center;
-            flex-wrap: wrap;
-            gap: 30px;
         }
         .offering-item {
             background: #fff;
-            border-radius: 12px;
-            padding: 25px;
-            width: 22%;
+            padding: 20px;
+            border-radius: 10px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            transition: all 0.3s ease-in-out;
+            text-align: center;
+            transition: transform 0.3s ease-in-out;
         }
         .offering-item:hover {
-            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
             transform: translateY(-5px);
         }
-        
-        @media (max-width: 768px) {
-            .offering-item {
-                width: 48%;
-            }
-        }
-        @media (max-width: 480px) {
-            .offering-item {
-                width: 100%;
-            }
-        }
-        
-        /* Contact Section */
         .contact-cta {
+            text-align: center;
+            padding: 50px;
             background: linear-gradient(90deg, #007bff, #0056b3);
             color: #fff;
-            text-align: center;
-            padding: 50px 10%;
         }
-        .contact-cta a {
-            display: inline-block;
-            margin-top: 20px;
-            padding: 12px 24px;
-            background: #ffdd57;
-            color: #333;
-            font-weight: bold;
-            border-radius: 5px;
-            transition: background 0.3s;
-        }
-        .contact-cta a:hover {
-            background: #ffc107;
-        }
-        
-        /* Footer Section */
         footer {
+            text-align: center;
+            padding: 20px;
             background: #333;
             color: #fff;
-            text-align: center;
-            padding: 20px 10%;
-        }
-        footer .social-links a, .footer-links a {
-            margin: 0 10px;
-            color: #ffdd57;
-            font-weight: bold;
-        }
-        footer .social-links a:hover, .footer-links a:hover {
-            color: #ffc107;
         }
     </style>
 </head>
 <body>
+
 <header>
-    <img src="Images/Logo.PNG" alt="SJ Technologys Logo">
+    <img src="Images/Logo.PNG" style="width: 70px; height: auto;" alt="SJ Technologys Logo">
     <h1>Welcome to SJ Technologys</h1>
     <p>Your Trusted IT Partner</p>
 </header>
+
 <nav>
     <ul>
         <li><a href="index.html">Home</a></li>
@@ -205,18 +112,50 @@
         <li><a href="Contact.html">Contact</a></li>
     </ul>
 </nav>
+
 <section class="hero">
     <h1>Smart IT Solutions for Your Business</h1>
-    <p>Offering computer repair, business email solutions, and custom website development.</p>
-    <a href="Contact.html">Get Started</a>
+    <p>Offering computer repair, business email solutions, and custom website development to empower your business.</p>
+    <a href="Contact.html" style="padding: 10px 20px; background: #ffdd57; color: #333; border-radius: 5px;">Get Started</a>
 </section>
+
+<section class="offerings">
+    <div class="offering-item">
+        <h3>24/7 Customer Support</h3>
+        <p>Always available to assist with any questions or issues.</p>
+    </div>
+    <div class="offering-item">
+        <h3>Quick Turnaround</h3>
+        <p>Fast and efficient service to keep your business running.</p>
+    </div>
+    <div class="offering-item">
+        <h3>Affordable Pricing</h3>
+        <p>Competitive prices without compromising on quality.</p>
+    </div>
+    <div class="offering-item">
+        <h3>Expert Technicians</h3>
+        <p>Certified professionals handling complex issues.</p>
+    </div>
+</section>
+
 <section class="contact-cta">
     <h2>Contact Us Today</h2>
-    <p>Let us help you transform your business with smart IT solutions!</p>
-    <a href="contact.html">Get in Touch</a>
+    <p>Transform your business with smart IT solutions!</p>
+    <a href="contact.html" style="padding: 10px 20px; background: #ffdd57; color: #333; border-radius: 5px;">Get in Touch</a>
 </section>
+
 <footer>
     <p>&copy; 2025 SJ Technologys. All rights reserved.</p>
+    <div>
+        <a href="https://www.facebook.com/share/14eco7o1DQ/?mibextid=wwXIfr" style="color: #fff;">Facebook</a> |
+        <a href="#" style="color: #fff;">Twitter</a> |
+        <a href="https://www.linkedin.com/company/sjtechnologys/" style="color: #fff;">LinkedIn</a>
+    </div>
+    <div>
+        <a href="terms-conditions.html" style="color: #fff;">Terms & Conditions</a> |
+        <a href="PrivacyPolicy.html" style="color: #fff;">Privacy Policy</a>
+    </div>
 </footer>
+
 </body>
 </html>
