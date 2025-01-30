@@ -14,6 +14,7 @@
 
     body {
       line-height: 1.6;
+      background: #f9f9f9;
     }
 
     nav {
@@ -71,21 +72,35 @@
 
     .header {
       display: flex;
-      flex-direction: row-reverse;
       align-items: center;
       justify-content: space-between;
       padding: 2rem;
       background: #ffffff;
       min-height: 90vh;
-      position: relative;
+    }
+
+    .header-image {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .header-image img {
+      max-width: 90%;
+      height: auto;
+      border-radius: 8px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     }
 
     .header-text {
-      max-width: 50%;
+      flex: 1;
+      padding: 2rem;
+      text-align: left;
     }
 
     .header-text h1 {
-      font-size: 3rem;
+      font-size: 2.5rem;
       margin-bottom: 1rem;
       color: #333;
     }
@@ -98,7 +113,7 @@
 
     .header-text .btn {
       padding: 0.75rem 1.5rem;
-      background: #000;
+      background: #ff9800;
       color: #fff;
       text-decoration: none;
       font-size: 1rem;
@@ -107,11 +122,7 @@
     }
 
     .header-text .btn:hover {
-      background: #444;
-    }
-
-    .header-image img {
-      max-width: 40%;
+      background: #e68a00;
     }
 
     footer {
@@ -148,15 +159,15 @@
 
   <!-- Header Section -->
   <header class="header">
+    <div class="header-image">
+      <img src="https://via.placeholder.com/600x400" alt="Technology illustration">
+    </div>
     <div class="header-text">
       <h1>Connect. Engage. Succeed.</h1>
       <p>
         At SJ Technology, we specialize in delivering reliable IT support and advanced solutions that empower businesses to thrive in the digital age.
       </p>
       <a href="#get-started" class="btn">Get Started</a>
-    </div>
-    <div class="header-image">
-      <img src="https://via.placeholder.com/600x400" alt="Technology illustration">
     </div>
   </header>
 
